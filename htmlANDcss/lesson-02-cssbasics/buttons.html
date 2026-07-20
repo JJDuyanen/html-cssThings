@@ -1,0 +1,65 @@
+<!-- CSS (change the appearance of HTML Elements) -->
+<!--  -->
+
+<!-- style elemnet doesn't appear visibly on page -->
+<style>
+    .button { /* button is a CSS Selector - which elements will be modified or we're targeting*/
+        /* text to the left is CSS Property (what we're modifying) */
+        /* right of the colon is CSS Value (what we're changing the property to) */
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px; /* button height */
+        width: 105px;
+        border-radius: 2px; /* border corners */
+        cursor: pointer;
+    }
+
+    .subscribe-button {
+        background-color: rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px; /* space (around an element) */
+    }
+
+    .join-button {
+        background-color: white;
+        border-color: rgb(41, 118, 211);
+        border-style: solid;
+        border-width: 1px;
+        color: rgb(41, 118, 211);
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .tweet-button{
+        background-color: rgb(2, 158, 255);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 74px;
+        border-radius: 18px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+</style>
+
+<button class="subscribe-button">
+    SUBSCRIBE
+</button>
+<!-- class attribute = lets us target specific elements with CSS -->
+
+<button class="join-button">
+    JOIN
+</button>
+<button class="tweet-button">
+    Tweet
+</button>

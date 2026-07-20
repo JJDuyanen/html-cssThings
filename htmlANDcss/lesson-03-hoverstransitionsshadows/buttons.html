@@ -1,0 +1,92 @@
+<!-- Hovers, Transitions, Shadows -->
+
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+
+    /* transition property */
+    /* transition smoothly between different styles */
+    transition: opacity 0.15s;
+  }
+
+  /* hover effect */
+  /* :hover is a example of CSS Pseudo-Class */
+  /* It basically adds extra styles in a certain situation */
+  .subscribe-button:hover {
+    /* inside this are styles that will apply only when we hover over the button */
+    opacity: 0.8; /* opacity fade out an element 1 to 0 */
+  }
+
+  /* click effect */
+  .subscribe-button:active {
+    /* :active pseudo class activates when we click on the element */
+    opacity: 0.5;
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+
+    /* transition multiple properties using comma*/
+    transition: background-color 0.15,
+        color 0.15;
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+  .tweet-button {
+    background-color: rgb(2, 158, 255);
+    color: white;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 8px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+    /* creating shadows */
+    /* shadow css property */
+    /* it has 4 values */
+    /* 1st values is horizontal position, 2nd vertical position, 3rd blur, 4th is color */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); /* rgba = a means opacity */
+  }
+</style>
+
+<button class="subscribe-button">
+  SUBSCRIBE
+</button>
+
+<button class="join-button">
+  JOIN
+</button>
+
+<button class="tweet-button">
+  Tweet
+</button>
