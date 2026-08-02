@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Practice</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!--style attribute let us write css code inside tags-->
+    <!--Inline style = CSS is written within a line of HTML-->
+
+    <!--Grid is a layout that has rows and columns-->
+    <div style="
+      display: grid;
+      grid-template-columns: 100px 100px;
+    ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2<p>text</p></div>
+    </div>
+
+    <!--margin to put spacing on top-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 100px 200px;
+    "> <!--grid-template-columns - more value = more columns-->
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">100px<p>text</p></div>
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: lightpink;">100px</div> <!--new row-->
+    </div>
+
+    <!--fr means free space and means to take up the remaining amount of space on this grid-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <!--2fr doubles the amount of space, it will be twice of wide as the second column-->
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    ">
+      <div style="background-color: lightblue;">100px</div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 40px;
+    "> <!--column and row gap means space or gap between columns and row-->
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+      <div style="background-color: lightblue; height: 200px;">1fr</div>
+      <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>
+  </body>
+</html>

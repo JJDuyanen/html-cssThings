@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice</title>
+  </head>
+  <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 80px;
+  "> <!--padding to the top so header won't cover the other elements-->
+  
+  <!--Position help us do things like keep the header at top of the page while we scroll-->
+  <!--CSS Position Create elements that stick to the page while scrolling-->
+  <!--CSS Position Create elements that appear on top of other elements-->
+
+  <!--position fix Positions the element in the  browser window  (sticks  to the page while scrolling)-->
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+    ">header</div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;
+    ">
+      sidebar
+    </div>
+
+    <!--position static This is the default value that every element starts with 
+    position  :  static  ;  causes the element to display normally-->
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+    ">div 1</div>
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+    ">div 2</div>
+
+  </body>
+</html>
