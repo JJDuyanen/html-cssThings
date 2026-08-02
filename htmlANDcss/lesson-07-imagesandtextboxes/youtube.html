@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+      .thumbnail {
+        width: 300px;
+        height: 300px;
+        /* object-fit: cover; */ /*  Enlarges the image to cover the entire  width  *  height  are  without stretching or distorting */
+        object-fit: contain; /*  Shrinks the image so that it's contained in the width  height  area */
+        object-position: top; /*  Determines where the image is positioned in the  width  height  area */
+      }
+
+      .search-bar {
+        font-size: 20px;
+        margin-left: 12px;
+        border-width: 100px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <input class="search-bar" type="text" placeholder="Search">
+
+    <!-- <input type  =  "text"> - Creates a text box-->
+    <!-- <input type  =  "text"  placeholder  =  "Search"> -  Add a placeholder (a label) to the text box-->
+    <!-- <input type  =  "checkbox"> - Creates a checkbox-->
+  </body>
+</html>

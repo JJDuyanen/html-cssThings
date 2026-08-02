@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+    <style>
+        /* CSS property called display to easily switch between block and inline block */
+        /*  vertical-align  :  middle  ;   Determines vertical alignment of inline-block elements. */
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+
+      .search-bar {
+        border-style: solid;
+      }
+
+      .video-title {
+        width: 300px;
+      }
+
+      .video-author, .video-stats {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!--In HTML there are three types of elements-->
+    <!--1. block element - Element will take up the  entire line  in its container e.g. <paragraph>-->
+    <!--2. inline block element -  Element will only take up as much space as needed e.g. image and input element-->
+    <!--3. inline element -  Element will appear within a line of text (a text element) e.g. strong element-->
+    <input class="search-bar" type="text" placeholder="Search">
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+
+
+    <p class="video-title">
+      Talking Tech <strong>and AI with</strong> Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
+  </body>
+</html>
